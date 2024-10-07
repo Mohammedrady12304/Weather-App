@@ -1,0 +1,166 @@
+/*The body style*/
+body 
+{
+    text-align: center;
+    background: #02B3E4;
+    margin: 0;
+    font-family: Verdana,sans-serif;
+    color: #e7e7e7;
+}
+
+/*The header "Landing Page" style*/
+h1 
+{
+    color: #0b1113;
+    letter-spacing: 2px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 3em;
+}
+
+/*Using media query to change the style of "Landing Page" header when the screen width 
+    is larger than or equals 35 times the current font size*/
+@media only screen and (min-width: 45em)
+{
+    h1 
+    {
+        font-size: 5em;
+    }
+}
+
+/*Adding upperr and lower margin to the div cantaining the sections*/
+#basicContent 
+{
+    margin: 1em auto 0px;
+    text-align: center;
+    width:50%;
+}
+
+h4
+{
+    display: inline;
+    margin-top: 0.5em ;
+    color: #0b1113;
+}
+
+#zip,
+#feelings,
+#nameOfCity,
+#generate
+{
+    background: #55B7E5;
+    margin: 1em auto 0px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    height: 35px;
+    text-align: center;
+    color: white;
+    display: block;
+    font-size: 1em;
+    resize: none;
+}
+#zip::placeholder,
+#feelings::placeholder,
+#nameOfCity::placeholder,
+#generate::placeholder{
+  color: white;
+  font-family: sans-serif;
+  font-size: 1em;
+}
+
+
+
+
+#zip:disabled,
+#nameOfCity:disabled
+{
+    cursor: not-allowed;
+}
+
+#generate:disabled
+{
+    background-color: #8b8b8d;
+    cursor: not-allowed;
+}
+#zip,
+#nameOfCity
+{
+    width: 35%;
+    display: inline;
+}
+
+#generate
+{
+    width: 25%;
+    margin-top: 0.5em;
+    background: #0a113a;
+    cursor: pointer;
+}
+
+#result
+{
+    margin:0 auto;
+    margin-top: 1em;
+    background: #1d3038;
+    border-radius: 10px;
+    height: 40%;
+    width: 80%;
+    visibility: hidden;
+}
+
+#enteryHolder > *
+{
+    padding: 0.5em
+}
+
+#clear
+{
+    cursor: pointer;
+    float: right;
+    padding: 0em;
+    margin: 0 ;
+    display:block;
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+    background: rgb(196, 36, 36);
+}
+
+#date
+{
+    padding-top: 1em;
+}
+
+#content
+{
+    padding-bottom: 1em;
+}
+
+#city,
+#min
+{
+    margin-right: 1em;
+}
+
+#temp,
+#max
+{
+    margin-left: 1em;
+}
+
+/* Footer Styles */
+.pageFooter {
+    background: blue;
+    padding: 0em;
+    color: #e7e7e7;
+    text-align: center;
+    margin-bottom: 0em;
+    width:100%;
+    bottom:0;
+    position: absolute;
+    height:8%;
+}
+input{
+color: #282b29;
+}

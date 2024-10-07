@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--The page title-->
+        <title>App of Weather Journal</title>
+        <!--Importing the stylesheet-->
+        <link href="style.css" rel="stylesheet"> 
+    </head>
+    <body onload="clearInput()">
+        <!--basic page header-->
+        <h1 class="basicHeader">
+           App of Weather Journal
+        </h1>
+        <!--creating a container for all the contents-->
+        <div id="basicContent">
+            <!--zip code or city name identifier-->
+            <div id="identifier">
+                <!--Create an input for the zip code-->
+                <input type="text" class="in" id="zip" placeholder="Enter zip code" />
+                <h4> OR </h4>
+                <!--Create an input for the city name-->
+                <input type="text" class="in" id="nameOfCity" placeholder="Enter city name" />
+            </div>
+            <!--Create an input for the description of the user-->
+            <input class="myInput" id="feelings" rows="5" cols="20" placeholder="Enter your discription">
+            <button id="generate" type="submit">Submit</button>
+        </div>
+        <div id="result">
+            <div id="enteryHolder">
+                <button id="clear" type="submit" onclick="clearResult()">X</button>
+                <div id="date"></div>
+                <div>
+                    <span id="city"></span>
+                    <span id="temp"></span>
+                </div>
+                <div>
+                    <span id="min"></span>
+                    <span id="max"></span>
+                </div>
+                <div id="description"></div>
+                <div id="content"></div>
+            </div>
+        </div>
+        <!--Page footer-->
+        <footer class="pageFooter">
+            <p>Udacity ©</p>
+        </footer>
+        <!--The scipt file-->
+        <script src="app.js"></script>
+    </body>
+</html>
